@@ -1,2 +1,2 @@
-# AISpanishPoemGenerator
+# AIPoemGenerator
 Created with CodeSandbox
