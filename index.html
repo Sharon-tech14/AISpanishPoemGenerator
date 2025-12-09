@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Ai Spanish Poem Generator</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Ai Poem Generator</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -13,40 +17,39 @@
       <h1>Ai Poem Generator</h1>
     </header>
     <main>
-      <form>
-        <input 
-        <div class="instructions"
-          type="text"
-          placeholder="enter the topic of the poem"
-          autofocus
-          required
-          autocomplete="off"
-        /> 
-        <input type="submit" />
-      </form>
-      <div class="poem">
-        “If I thought for just one moment
-        <br />
-        that this would be my last breath,
-        <br />
-        I'd tell you I'll love you forever,
-        <br />
-        even beyond death.
+      <div class="form-container"> 
+        <form id="poem-generator-form">
+          <input 
+            class="instructions"
+            type="text"
+            placeholder="enter the topic of the poem"
+            autofocus
+            required
+            autocomplete="off"
+            id="user-instructions"
+          /> 
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="hint">ie:flower,paris,chesse,</div>
       </div>
+        <div class="poem hidden" id="poem"></div>
+        
+        
     </main>
     <footer>
     This project was coded by <a href="https://www.linkedin.com/in/sharon-ogbonna/" target="_blank">Sharon  Ogbonna</a>
     and is 
-    <a href="" target="_blank"
+    <a href="https://codesandbox.io/p/github/Sharon-tech14/AiPoemGenerator" target="_blank"
     >
     open-sourced on Github </a
     >
     and is 
-    <a href="" target="_blank"
+    <a href="https://aipoemgene.netlify.app/" target="_blank"
     >
-    hosted on netlifyg
+    hosted on netlify
     
     </footer>
     </div>
+    <script src="index.js"></script>
     </body>
 </html>
